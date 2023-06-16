@@ -356,7 +356,7 @@ bool DLM_Fit::ProbePars(const std::vector<float>* pars, const unsigned& ThId){
 }
 
 std::vector<DLM_Histo<float>*> DLM_Fit::Eval(const std::vector<float>& pars){
-  unsigned ThId = omp_get_thread_num();
+  unsigned ThId = 0;
   if(!ProbePars(&pars,ThId)){
     std::vector<DLM_Histo<float>*> dummy;
     return dummy;
@@ -446,7 +446,7 @@ void DLM_Fit::SetNumWildCards(const unsigned& num){
 //the new "solutions" are not evaluated yet, recongnized by their Chi2 = -1
 //returns true if we converged
 bool DLM_Fit::PrepareForWalk(){
-  unsigned ThId = omp_get_thread_num();
+  unsigned ThId = 0;
 
   //completely random
   if(Solution->size()<NumBestSols){
@@ -836,7 +836,7 @@ void DLM_Fit::WanderAround(){
   else{
     //#pragma omp parallel for
     for( int iSol=SolZero; iSol<=SolFinal; iSol++){
-      unsigned ThId = omp_get_thread_num();
+      unsigned ThId = 0;
       //printf("Probe %i (%u)\n",iSol,ThId);
       //usleep(2000e3);
       ProbePars(Solution->at(iSol).Par,ThId);

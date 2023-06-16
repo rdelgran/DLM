@@ -40,7 +40,7 @@ unsigned GetOptimalThreads(){
   do{
     //bool TestOngoing = true;
     Timer.Start();
-    omp_set_dynamic(0);
+     
     omp_set_num_threads(Cth);
     while(true){
       double DUMMY = 0;

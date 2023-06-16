@@ -385,11 +385,11 @@ double DLM_Bessel1(const double& order, const double& arg, const bool& Threadsaf
         //this stalls the code??!!
         //#pragma omp critical
         {
-        BESSEL_OBJECT = new Bessel [omp_get_num_procs()];
+        BESSEL_OBJECT = new Bessel [1];
         }
     }
 //printf(" Object is there\n");
-    const unsigned WhichThread = omp_get_thread_num();
+    const unsigned WhichThread = 0;
 //printf(" WhichThread=%u\n",WhichThread);
     BESSEL_OBJECT[WhichThread].besseljy(order,arg);
 //printf(" BESSEL_OBJECT\n");

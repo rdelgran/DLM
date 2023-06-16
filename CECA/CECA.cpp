@@ -653,7 +653,7 @@ bool CECA::ParticleInList(const TreParticle* prt) const{
 }
 
 unsigned CECA::GenerateEventTEMP(){
-  unsigned ThId = omp_get_thread_num();
+  unsigned ThId = 0;
   std::vector<CecaParticle*> Primordial;
   Primordial.clear();
   for(int i=0; i<4; i++){
@@ -674,7 +674,7 @@ unsigned CECA::GenerateEventTEMP(){
 //generates all particles, propagates and decays into the particles of interest
 //and lastly builds up the
 unsigned CECA::GenerateEvent(const unsigned& ThId){
-    //unsigned ThId = omp_get_thread_num();
+    //unsigned ThId = 0;
 
     //there was some issue using the objects
     //a silly workaround: I will only keep track of pointers,
@@ -1617,7 +1617,7 @@ void CECA::GhettoTest1(const unsigned NumPairs, const float r_SP, const float p_
   Old_source->SetUpReso(0,1.-F_prim);
   Old_source->SetUpReso(1,1.-F_prim);
 //printf("h1 2\n");
-  omp_set_dynamic(0);
+   
   omp_set_num_threads(NumThr);
   DLM_Random** RanGen = new DLM_Random* [NumThr];
   for(unsigned uThr=0; uThr<NumThr; uThr++){
@@ -1729,7 +1729,7 @@ void CECA::GhettoTest1(const unsigned NumPairs, const float r_SP, const float p_
   #pragma omp parallel for
   for(unsigned uPair=0; uPair<NumPairs; uPair++){
 //printf("uPair = %u\n",uPair);
-    unsigned ThId = omp_get_thread_num();
+    unsigned ThId = 0;
 //if(omp_get_num_threads()==1) ThId = uPair%7;
 //ThId = uPair%7;
     float r_x,r_y,r_z,p_x,p_y,p_z,rad,mom,mass,kstar,rstar,rcore;

@@ -27,6 +27,7 @@ double DoubleGaussSum(double* Pars);
 double TripleGaussSum(double* Pars);
 double GaussExpSum(double* Pars);
 double UsmaniPotentialCats(double* Pars);
+double UsmaniPotentialLonardoni(double* Pars);
 double UsmaniFit(double* Pars);
 double UsmaniFitAll(double* Pars);
 double RepulsiveCore(double* Pars);

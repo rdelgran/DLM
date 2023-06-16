@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "/home/raffaele/CATS2/DLM/install/lib/libCATS.pdb"
+  "/home/raffaele/CATS2/DLM/install/lib/libCATS.so"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS/CATS.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS/CATStools.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_Ck.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_CkDecomp.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_CkDecomposition.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_CkModels.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_Fitters.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_Potentials.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_ResponseMatrix.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_Source.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_StefanoPotentials.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CATS_Extentions/DLM_WfModel.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CECA/CECA.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/CECA/TREPNI.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_CppTools/DLM_CppTools.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_CppTools/DLM_OmpTools.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_FemtoTools/CommonAnaFunctions.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_Bessel.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_Fit.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_Integration.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_MathFunctions.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_Random.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_RootFinder.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_MathTools/DLM_Unfold.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_CRAB_PM.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_DecayMatrix.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_DrawingTools.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_HistoAnalysis.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_MultiFit.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_RootFit.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_RootWrapper.cpp.o"
+  "CMakeFiles/CATS.dir/home/raffaele/CATS2/DLM/DLM_RootTools/DLM_SubPads.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/CATS.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
